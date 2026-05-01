@@ -23,7 +23,7 @@ app.get('/dashboard',(req,res)=>{
     if(!req.session.username){
         res.send('login first');
     }
-    res.send(Welcome ${req.session.username},you are logged in as ${req.session.role});
+    res.send(`Welcome ${req.session.username},you are logged in as ${req.session.role}`);
 })
 app.get('/admin',(req,res)=>{
     if(!req.session.username){
