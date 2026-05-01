@@ -43,7 +43,6 @@ app.get('/logout',(req, res)=>{
         res.send('Logout successful');
     });
 });
-
 app.listen(3000,()=>{
     console.log('Server running 3000');
 });
